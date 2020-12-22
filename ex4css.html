@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<title>Formulaire</title>
+	<meta charset "UTF-8">
+	<style>
+		fieldset {
+			border: 1px solid #D3D3D3;
+        }
+        .identité {
+            background-color: #2E86C1;
+        }
+        .livraison{
+            background-color: purple;
+        }
+        .reglement{
+        background-color: #CB3270;
+        }
+	</style>
+</head>
+
+<body>
+	<form method="post" action="" id=paiement>
+		<fieldset class="identité">
+			<legend>
+				Votre identité
+			</legend>
+			<p>
+				<ol>
+					<li>
+						<label for="nom">Nom</label>
+						:
+						<input type="text" name="nom" id="name" placeholder="ex.DUPONT" required />
+					</li>
+					<li>
+						<label for="prénom">Prénom</label>
+						:
+						<input type="text" name="prénom" id="firstname" placeholder="ex.Marie" required />
+					</li>
+					<li>
+						<label for="mail">Adresse mail</label>
+						:
+						<input type="email" name="mail" id="mail" placeholder="ex. mail@mail.com" required />
+					</li>
+				</ol>
+			</p>
+		</fieldset>
+		<fieldset class="livraison">
+			<legend>
+				Adresse de Livraison
+			</legend>
+			<p>
+				<ol>
+					<li>
+						<label for="address">Adresse</label>:
+
+						<textarea id=address name=adresse rows=5 cols=20 required></textarea>
+					</li>
+					<li>
+						<label for="zipcode">Code postal</label>:
+
+						<input type="text" name="zipcode" id="zipcode" placeholder="ex. 76600" required />
+					</li>
+					<li>
+						<label for="city">Ville</label>:
+
+						<input type="text" name="city" id="city" placeholder="ex. Le Havre" required />
+					</li>
+				</ol>
+			</p>
+		</fieldset>
+		<fieldset class="reglement">
+			<legend>
+				Informations de règlement
+			</legend>
+			<p>
+				<ol>
+					<li><label for="cardType">Type de carte bancaire</label> :</li>
+					<ul>
+						<li>
+							<input type=radio id="visa" name="cardType" value="VISA" required checked>
+							<label for=visa>VISA</label>
+						</li>
+						<li>
+							<input id="mastercard" name="cardType" type=radio value="Mastercard" required>
+							<label for="mastercard">Mastercard</label>
+						</li>
+					</ul>
+					<li>
+						<label for="cardNumber">Numéro de carte</label> :
+						<input type="text" name="cardNumber" id="cardNumber" placeholder="ex. 4936 XXXX XXXX XXXX" required />
+					</li>
+					<li>
+						<label for="securityCode">Code de sécurité</label> 
+						<input type="text" name="securitycode" id="code" placeholder="ex. 2XX" />
+					</li>
+					<li>
+						<label for="cardOwner">Nom du titulaire</label> :
+
+						<input type="text" name="cardOwner" id="nomtitulaire" placeholder="DUPONT" required />
+					</li>
+				</ol>
+			</p>
+		</fieldset>
+		<p>
+			<button type=submit name="submitButton">J'achète !</button>
+		</p>
+
+	</form>
+</body>
+
+</html>

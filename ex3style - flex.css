@@ -1,0 +1,63 @@
+    .num1 {
+        background-color: #3CB371;
+        width: 80%;
+        height: 40px;
+        float: left;
+
+    }
+
+    .num2 {
+        background-color: #4169E1;
+        width: 20%;
+        height: 40px;
+        float: right;
+    }
+
+    .num3 {
+        background-color: #B22222;
+        width: 30%;
+        height: 120px;
+        float: left;
+    }
+
+    .num4 {
+        background-color: #FA711D;
+        width: 35%;
+        height: 60px;
+        float: left;
+    }
+
+    .num5 {
+        background-color: #808080;
+        width: 35%;
+        height: 60px;
+        float: left;
+    }
+
+    .num6 {
+        background-color: #FF8C00;
+        width: 25%;
+        height: 60px;
+        float: left;
+    }
+
+    .num7 {
+        background-color: #218B68;
+        width: 20%;
+        height: 60px;
+        float: left;
+    }
+
+    .num8 {
+        background-color: #DD500E;
+        width: 25%;
+        height: 60px;
+        float: left;
+    }
+
+    .num9 {
+        background-color: #4B4343;
+        width: 100%;
+        height: 180px;
+        float: left;
+    }
